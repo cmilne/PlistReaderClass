@@ -8,7 +8,7 @@ To Install:
 
 Usage (Pseudocode):
 
-#import "PListReader.h"
+import "PListReader.h"
 
 @interface UsingClass() {
 	@property (strong, nonatomic) NSArray *array;
