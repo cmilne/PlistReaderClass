@@ -20,13 +20,19 @@ import "PListReader.h"
 
 // Inside a function where you want to read a plist file..
 // You don't need to include the .plist extension in the filename
+
 PListReader *reader = [PListReader alloc] init];
+
 self.array = [reader fGetArray:@"fileNameWithArrayRoot"];
+
 self.dict = [reader fGetDictionary:@"fileNameWithDictionaryRoot"];
 
 // Debugging, printing helper functions to make sure the plist loaded correctly
+
 [reader fPrintArray:@"fileNameWithArrayRoot"];
+
 [reader fPrintDictionary:@"fileNameWithDictionaryRoot"];
 
 // You can also return the plist from an NSData file
+
 id plist = [reader fReadPList:@"fileNameSerializedData"];
